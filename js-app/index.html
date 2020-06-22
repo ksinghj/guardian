@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guardian</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="hero flex__column">
+      <img src="./img/guardian-logo.jpeg" class="logo" />
+      <h2 class="header">News</h2>
+    </div>
+    <form class="controls flex__column">
+        <input data-js-input type="text" class="controls__input" placeholder="'Football'"></input>
+        <button data-js-button class="controls__button" type="submit">Search</button>
+    </form>
+    <div class="content"></div>
+    <script src="./api.js"></script>
+  </body>
+</html>
