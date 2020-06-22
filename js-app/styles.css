@@ -32,3 +32,9 @@ body {
   border: none;
   outline: 1px solid white;
 }
+
+/* content */
+.content {
+  max-width: 75vw;
+  margin: auto;
+}

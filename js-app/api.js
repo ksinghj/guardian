@@ -8,16 +8,13 @@ const getArticles = async inputValue => {
   inputValue.preventDefault();
   searchQuery = input.value;
   console.log(searchQuery);
-
   // get data
   let response = await fetch(
     `https://content.guardianapis.com/search?q=${searchQuery}&api-key=${KEY}`
   );
   let data = await response.json();
-
   // populate articles
   articles = data.response.results;
-  console.log(articles);
   return articles;
 };
 
@@ -27,7 +24,7 @@ const displayNews = async e => {
   return data.map(article => {
     let p = document.createElement("p");
     p.innerHTML = article.webTitle;
-    content.appendChild(p);
+    return content.appendChild(p);
   });
 };
 
