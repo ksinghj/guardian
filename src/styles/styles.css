@@ -1,0 +1,40 @@
+body {
+  box-sizing: border-box;
+  font-family: "Poppins";
+  font-weight: 200;
+}
+.flex__column {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.logo {
+  max-width: 25vw;
+  height: auto;
+  margin: 0 auto;
+}
+/* .header {
+  font-size: 20px;
+  margin: 0;
+} */
+.controls {
+  max-width: 40vw;
+  margin: 2em auto;
+}
+.controls * {
+  padding: 1em;
+  margin-top: 0.5em;
+}
+.controls__button {
+  cursor: pointer;
+  background: #00528c;
+  color: white;
+  border: none;
+  outline: 1px solid white;
+}
+
+/* content */
+.content {
+  max-width: 75vw;
+  margin: auto;
+}
