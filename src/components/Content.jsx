@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 class Content extends React.Component {
   articlesMapped = arr => {
@@ -8,7 +9,7 @@ class Content extends React.Component {
           <div className="content">
             <p>{article.webTitle}</p>
             <a href={article.webUrl} target="_blank" rel="noopener noreferrer">
-              <button>Go to article</button>
+              <Button>Go to article</Button>
             </a>
           </div>
         );
